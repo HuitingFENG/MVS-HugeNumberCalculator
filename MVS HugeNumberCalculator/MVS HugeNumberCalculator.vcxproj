@@ -18,6 +18,12 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ScanHugeNumber.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ScanHugeNumber.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -138,15 +144,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="MVS HugeNumberCalculator.cpp" />
-    <ClCompile Include="ScanHugeNumber.c" />
-    <ClCompile Include="ShowHugeNumber.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="ScanHugeNumber.h" />
-    <ClInclude Include="ShowHugeNumber.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
