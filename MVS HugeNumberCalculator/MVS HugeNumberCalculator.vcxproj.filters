@@ -21,9 +21,15 @@
     <ClCompile Include="ScanHugeNumber.c">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="ShowHugeNumber.c">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ScanHugeNumber.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowHugeNumber.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
