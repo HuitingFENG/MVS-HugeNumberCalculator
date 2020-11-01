@@ -29,5 +29,11 @@
     <ClCompile Include="ShowHugeNumber.c">
       <Filter>Fichiers d%27en-tête\Fichiers sources</Filter>
     </ClCompile>
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
