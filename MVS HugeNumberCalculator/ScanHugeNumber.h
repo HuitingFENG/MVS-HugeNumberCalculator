@@ -6,4 +6,4 @@
 extern HugeInt* scanHugeInt(void);
 extern HugeUnsignedInt* scanHugeUnsignedInt(void);
 
-#endif // !SCAN_HUGE_NUMBER
+
