@@ -142,6 +142,7 @@
     <ClCompile Include="Header1.c" />
     <ClCompile Include="HugeFloat.c" />
     <ClCompile Include="HugeInt.c" />
+    <ClCompile Include="HugeUnsignedInt.c" />
     <ClCompile Include="MVS HugeNumberCalculator.cpp" />
     <ClCompile Include="ScanHugeNumber.c" />
     <ClCompile Include="ShowHugeNumber.c" />
