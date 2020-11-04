@@ -144,7 +144,9 @@
     <ClCompile Include="ShowHugeNumber.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Header.h" />
     <ClInclude Include="HugeFloat.h" />
+    <ClInclude Include="HugeInt.h" />
     <ClInclude Include="ScanHugeNumber.h" />
     <ClInclude Include="ShowHugeNumber.h" />
   </ItemGroup>

@@ -1,26 +1,18 @@
-#include <stdio.h>
-#include "HugeFloat.h"
+#ifndef HUGE_FLOAT
+#define HUGE_FLOAT
 
-HugeFloat* createHugeFloat(void) {
-    return NULL;
-}
+#include "HugeInt.h"
 
-HugeFloat* createHugeFloatFromString(const char* significandString, const char* exponentString) {
-    return NULL;
-}
+typedef struct HugeFloat {
+    HugeInt* significand;
+    HugeInt* exponent;
+} HugeFloat;
 
-HugeFloat* createHugeFloatFromHugeInts(const HugeInt* significandHugeInt, const HugeInt* exponentSHugeInt) {
-    return NULL;
-}
+extern HugeFloat* createHugeFloat(void);
+extern HugeFloat* createHugeFloatFromString(const char* significandString, const char* exponentString);
+extern HugeFloat* createHugeFloatFromHugeInts(const HugeInt* significandHugeInt, const HugeInt* exponentSHugeInt);
+extern HugeFloat* createHugeFloatFromHugeFloat(const HugeFloat* hugeFloat, const unsigned int size);
+extern void       deleteHugeFloat(const HugeFloat* hugeFloat);
+extern int        getHugeFloatLength(const HugeFloat* hugeFloat);
 
-HugeFloat* createHugeFloatFromHugeFloat(const HugeFloat* hugeFloat, const unsigned int size) {
-    return NULL;
-}
-
-void deleteHugeFloat(const HugeFloat* hugeFloat) {
-}
-
-int getHugeFloatLength(const HugeFloat* hugeFloat) {
-    return 0;
-}
-
+#endif // !HUGE_FLOAT
