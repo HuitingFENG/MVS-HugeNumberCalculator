@@ -147,6 +147,7 @@
     <ClInclude Include="Header.h" />
     <ClInclude Include="HugeFloat.h" />
     <ClInclude Include="HugeInt.h" />
+    <ClInclude Include="HugeUnsignedInt.h" />
     <ClInclude Include="ScanHugeNumber.h" />
     <ClInclude Include="ShowHugeNumber.h" />
   </ItemGroup>
