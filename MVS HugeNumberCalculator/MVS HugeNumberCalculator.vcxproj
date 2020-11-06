@@ -19,12 +19,21 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ScanHugeNumber.h" />
-    <ClInclude Include="ShowHugeNumber.h" />
+    <ClInclude Include="Datatypes\DoublyLinkedList.h" />
+    <ClInclude Include="UseHugeNumber\Type\HugeFloat.h" />
+    <ClInclude Include="UseHugeNumber\Type\HugeInt.h" />
+    <ClInclude Include="UseHugeNumber\Type\HugeUnsignedInt.h" />
+    <ClInclude Include="IHMHugeNumber\ScanHugeNumber.h" />
+    <ClInclude Include="IHMHugeNumber\ShowHugeNumber.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ScanHugeNumber.c" />
-    <ClCompile Include="ShowHugeNumber.c" />
+    <ClCompile Include="Datatypes\DoublyLinkedList.c" />
+    <ClCompile Include="UseHugeNumber\Type\HugeFloat.c" />
+    <ClCompile Include="UseHugeNumber\Type\HugeInt.c" />
+    <ClCompile Include="UseHugeNumber\Type\HugeUnsignedInt.c" />
+    <ClCompile Include="MVS HugeNumberCalculator.c" />
+    <ClCompile Include="IHMHugeNumber\ScanHugeNumber.c" />
+    <ClCompile Include="IHMHugeNumber\ShowHugeNumber.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -146,7 +155,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
