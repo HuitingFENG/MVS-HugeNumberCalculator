@@ -29,6 +29,4 @@ void printHugeInt(const HugeInt* hugeInt) {
     free (hugeIntString);
 }
 
-
-void printHugeFloat(const HugeFloat* hugeFloat) {
 }
