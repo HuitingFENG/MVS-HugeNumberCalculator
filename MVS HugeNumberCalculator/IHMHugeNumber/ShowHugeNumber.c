@@ -20,11 +20,15 @@ static char* HugeFloatToString(const HugeFloat* hugeFloat) {
     return NULL;
 }
 
-void printHugeUnsignedInt(const HugeUnsignedInt* hugeUnsignedInt) {
-}
+
 
 void printHugeInt(const HugeInt* hugeInt) {
+    void printHugeInt (const HugeInt* hugeInt) {
+    char* hugeIntString = HugeIntToString (hugeInt);
+    printf ("%s\n", hugeIntString);
+    free (hugeIntString);
 }
+
 
 void printHugeFloat(const HugeFloat* hugeFloat) {
 }
