@@ -8,6 +8,9 @@
     <ClCompile Include="UseHugeNumber\Type\HugeUnsignedInt.c" />
     <ClCompile Include="UseHugeNumber\Type\HugeInt.c" />
     <ClCompile Include="UseHugeNumber\Type\HugeFloat.c" />
+    <ClCompile Include="UseHugeNumber\Operator\HugeFloatOperator.c" />
+    <ClCompile Include="UseHugeNumber\Operator\HugeIntOperator.c" />
+    <ClCompile Include="UseHugeNumber\Operator\HugeUnsignedIntOperator.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Datatypes\DoublyLinkedList.h" />
@@ -16,5 +19,8 @@
     <ClInclude Include="UseHugeNumber\Type\HugeUnsignedInt.h" />
     <ClInclude Include="UseHugeNumber\Type\HugeInt.h" />
     <ClInclude Include="UseHugeNumber\Type\HugeFloat.h" />
+    <ClInclude Include="UseHugeNumber\Operator\HugeFloatOperator.h" />
+    <ClInclude Include="UseHugeNumber\Operator\HugeIntOperator.h" />
+    <ClInclude Include="UseHugeNumber\Operator\HugeUnsignedIntOperator.h" />
   </ItemGroup>
 </Project>
