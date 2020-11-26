@@ -1,15 +1,41 @@
 // MVS HugeNumberCalculator.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
-//
-
 /* TP2 HugeNumberCalculator */
 
-// Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
-// Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage
+#include <stdlib.h>
+#include <stdio.h>
+#include "IHMHugeNumber/ScanHugeNumber.h"
+#include "IHMHugeNumber/ShowHugeNumber.h"
 
-// Astuces pour bien démarrer : 
-//   1. Utilisez la fenêtre Explorateur de solutions pour ajouter des fichiers et les gérer.
-//   2. Utilisez la fenêtre Team Explorer pour vous connecter au contrôle de code source.
-//   3. Utilisez la fenêtre Sortie pour voir la sortie de la génération et d'autres messages.
-//   4. Utilisez la fenêtre Liste d'erreurs pour voir les erreurs.
-//   5. Accédez à Projet > Ajouter un nouvel élément pour créer des fichiers de code, ou à Projet > Ajouter un élément existant pour ajouter des fichiers de code existants au projet.
-//   6. Pour rouvrir ce projet plus tard, accédez à Fichier > Ouvrir > Projet et sélectionnez le fichier .sln.
+#include "UseHugeNumber/Operator/HugeFloatOperator.h"
+#include "UseHugeNumber/Operator/HugeIntOperator.h"
+#include "UseHugeNumber/Operator/HugeUnsignedIntOperator.h"
+
+int main (void) {
+   
+    HugeFloat* op1 = createHugeFloatFromString ("1002315684321510", "-10");
+    HugeFloat* op2 = createHugeFloatFromString ("98745", "236");
+    HugeFloat* addition = addHugeFloat (op1, op2);
+    HugeFloat* substraction = substractHugeFloat (op1, op2);
+    HugeFloat* multiplication = multiplyHugeFloat (op1, op2);
+    HugeInt* division = divideHugeInt (op1->significand, op2->significand);
+
+    printHugeFloat (op1);
+    printHugeFloat (op2);
+    printf (" + = ");
+    printHugeFloat (addition);
+    printf (" - = ");
+    printHugeFloat (substraction);
+    printf (" x = ");
+    printHugeFloat (multiplication);
+    printf (" / = ");
+    printHugeInt (division);
+
+    deleteHugeFloat (op1);
+    deleteHugeFloat (op2);
+
+    deleteHugeFloat (addition);
+    deleteHugeFloat (substraction);
+    deleteHugeFloat (multiplication);
+    deleteHugeInt (division);
+    return EXIT_SUCCESS;
+}
