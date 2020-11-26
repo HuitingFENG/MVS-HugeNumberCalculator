@@ -6,7 +6,7 @@ HugeInt* createHugeInt (void) {
     HugeInt* hugeInt = malloc (sizeof (HugeInt));
 
     if (hugeInt != NULL) {
-        HugeUnsignedInt* absoluteValue = createHugeUnsignedInt ();
+        HugeUnsignedInt* absoluteValue = NULL;
         hugeInt->absoluteValue = absoluteValue;
         hugeInt->sign = PLUS;
     }
