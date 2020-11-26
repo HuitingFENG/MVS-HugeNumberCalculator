@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "HugeFloat.h"
@@ -7,8 +6,8 @@ HugeFloat* createHugeFloat (void) {
     HugeFloat* hugeFloat = malloc (sizeof (HugeFloat));
 
     if (hugeFloat != NULL) {
-        hugeFloat->significand = createHugeInt ();
-        hugeFloat->exponent = createHugeInt ();
+        hugeFloat->significand = NULL;
+        hugeFloat->exponent = NULL;
     }
 
     return hugeFloat;
@@ -45,10 +44,11 @@ HugeFloat* createHugeFloatFromHugeFloat (const HugeFloat* hugeFloat, const unsig
     return hugeFloatCopy;
 }
 
-void deleteHugeFloat (const HugeFloat* hugeFloat) {
+void deleteHugeFloat (HugeFloat* hugeFloat) {
     if (hugeFloat != NULL) {
         deleteHugeInt (hugeFloat->significand);
         deleteHugeInt (hugeFloat->exponent);
+        free (hugeFloat);
     }
 }
 
